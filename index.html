@@ -18,6 +18,7 @@
         <a href="#" class="logo"><span>my </span>sample work</a>
       </header>
       <div class="content">
+        <img src="vecteezy.png" class="colors" alt="" />
         <h3>Hi</h3>
         <h2>Welcome to <span id="text">My</span> Sample Work</h2>
         <p>
@@ -27,26 +28,31 @@
         </p>
         <button class="chat">
           Get Started
-          <ion-icon name="logo-wechat"></ion-icon>
+          <a href="https://www.wechat.com/" target="_blank">
+            <ion-icon name="logo-wechat"></ion-icon>
+          </a>
         </button>
+      
         <button class="learn-more">Learn More</button>
       </div>
-      <img src="colors.png" class="colors" alt="">
+      <img src="colors.png" class="colors" alt="" />
       <ul class="sci">
         <li>
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://www.facebook.com/logins/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
         </li>
         <li>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
         </li>
         <li>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
         </li>
       </ul>
-      <div class="dayNight">
-        <ion-icon name="moon-outline"></ion-icon>
-        <ion-icon name="sunny-outline"></ion-icon>
-      </div>
     </section>
 
     <script
@@ -57,13 +63,15 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
-      let banner = document.querySelector(".banner");
-      let dayNight = document.querySelector(".dayNight");
-
-      dayNight.oneclick = () => {
-        banner.classList.toggle("night");
-      }
+      var typed = new Typed("#text", {
+        strings: ["My", " Professional", "Creative"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true,
+      });
     </script>
   </body>
 </html>

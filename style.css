@@ -17,8 +17,18 @@
     background: #fff;
     transition: 0.5s;
 }
-section.banner.night{
-    background: #333;
+
+.banner ::before {
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+    background: url(vecteezy.png);
+    background-size: cover;
+    animation: animateColors 10s ease-in-out infinite;
+    animation-delay: -5s;
 }
 
 header {
@@ -102,7 +112,7 @@ header ul li a {
     border: none;
     outline: none;
     padding: 15px 35px;
-    border-radius: 40px;
+    border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
@@ -142,37 +152,17 @@ header ul li a {
     color: #2196f2;
 }
 
-.dayNight {
-    position: absolute;
-    right: 50%;
-    bottom: 25px;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
-    background: #f0f0f0;
-    border-radius: 50%;
-    color: #666;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    font-size: 2rem;
-}
-
-.dayNight ion-icon :nth-child(1) {
-    display: none;
-}
-
 .colors {
     position: absolute;
     right: 0;
-    max-width: 800px;
-    animation: animatecolors 8s ease-in-out infinite;
-
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    animation: animateColors 8s ease-in-out infinite;
 }
 
-@keyframes animatecolors {
+@keyframes animateColors {
 
     0%,
     100% {

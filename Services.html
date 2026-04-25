@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional sample template 2026</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="logo"><span>my </span>sample work</a>
+      </header>
+      <section class="services">
+        <div class="grid-container" id="gridContainer"></div>
+        <div class="signin">
+          <div class="content">
+            <h2></h2>
+            <form action="" class="form">
+              <div class="inputBox">
+                <input type="text" id="username" required="required" />
+                <label for="username">Username</label>
+              </div>
+              <div class="inputBox">
+                <input type="password" id="password" required="required" />
+                <label for="password">Password</label>
+                <button
+                  type="button"
+                  class="password-toggle"
+                  id="togglePassword"
+                >
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+              </div>
+                <div class="links">
+                  <a href="#">Forgot Password?</a>
+                  <a href="#">Sign Up</a>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" />
+                        Remember me
+                    </label>
+                    <label>
+                        <input type="checkbox" />
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+                <div class="social-login">
+                    <p>Or sign in with</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google">
+                            google
+                            <ion-icon name="logo-google"></ion-icon>
+                        </button>
+                            <button class="social-btn github">
+                                <ion-icon name="logo-github"></ion-icon>
+                                github
+                            </button>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <ul class="sci">
+        <li>
+          <a href="https://www.facebook.com/logins/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <div class="dayNight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      let banner = document.querySelector(".banner");
+      let dayNight = document.querySelector(".dayNight");
+
+      dayNight.onclick = function () {
+        banner.classList.toggle("night");
+      };
+    </script>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#text", {
+        strings: ["My", " Professional", "Creative"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1500,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

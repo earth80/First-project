@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional sample template 2026</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    
   </head>
   <body>
     <section class="banner">
@@ -18,8 +20,36 @@
           </ul>
         </nav>
         </ul>
+
         <a href="#" class="logo"><span>my </span>sample work</a>
+
       </header>
+
+      <section class="contact" id="contact">
+
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2>Contact Us</h2>
+            <p>Have any questions or want to get in touch? Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
      <ul class="sci">
         <li>
           <a href="https://www.facebook.com/logins/" target="_blank">
@@ -50,7 +80,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
     <script>
       let banner = document.querySelector(".banner");
       let dayNight = document.querySelector(".dayNight");
@@ -70,5 +99,7 @@
         loop: true,
       });
     </script>
+
   </body>
+  
 </html>
